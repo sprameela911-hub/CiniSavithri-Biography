@@ -1,69 +1,127 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Register Form</title>
-</head>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <style>
+      body {
+        background-color: rgb(238, 255, 47);
+      }
+      .parent {
+        background-color: rgba(255, 255, 255, 0.467);
+        backdrop-filter: blur(20px);
+        width: 25%;
+        text-align: center;
+        margin: 5% auto 5% auto;
+        padding: 10px 10px 30px 10px;
+        font-family: sans-serif;
+        box-shadow: 0px 1px 40px rgba(255, 255, 255, 0.7);
+        border-radius: 10px;
+      }
+      .form-field input {
+        padding: 10px;
+        width: 80%;
+        border-radius: 8px;
+        margin: 5px 0px 5px 0px;
+      }
+      .parent div {
+        margin: 5% 0%;
+      }
+      .form-field button{
+        width: 80%;
+        border-radius: 8px;
+        padding: 10px;
+        background-color:rgb(212, 0, 255);       
+         color:whitesmoke;
 
-<body align ="center">
+      }
+    </style>
+  </head>
+  <body>
+    <form action="./login.html" class="parent">
+      <h2><i>REGISTER</i></h2>
+      <div class="form-field">
+        <input type="text" placeholder="Enter your name" name="name" required />
+      </div>
+      <div class="form-field">
+        <input
+          type="Email"
+          placeholder="Enter your Email"
+          name="name"
+          required
+        />
+      </div>
 
-<h1><i>User Registration Form</i></h1>
+      <div class="form-field">
+        <input
+          type="password"
+          placeholder="Enter your Password"
+          name="Password"
+          required
+        />
+      </div>
+      <div class="form-field">
+        <input
+          type="number"
+          placeholder="Enter Mobile Number"
+          name="phone number"
+          required
+        />
+      </div>
+      <div class="form-Dob">
+        <label for="">Date of Birth</label>
+        <input type="date" required />
+      </div>
+      <div class="form-radio">
+        Gender:<input
+          type="radio"
+          id="gmale"
+          name="gender"
+          value="male"
+          required
+        />
+        <label for="gmale">Male</label>
+        <input
+          type="radio"
+          id="gfemale"
+          name="gender"
+          value="female"
+          required
+        />
+        <label for="gfemale">Female</label>
+      </div>
+      <div class="form-field2">
+        <input type="checkbox" id="10th" value="10th" />
+        <label for="10th">10th</label>
+        <input type="checkbox" id="inter" value="Inter" />
+        <label for="inter">Inter</label>
+        <input type="checkbox" id="Btech" value="Btech" />
+        <label for="Btech">Btech</label>
+      </div>
+      <div>
+        <input type="file" style="width: 200px" required />
+      </div>
+      <div class="form-field2">
+        <select required>
+          <option value="">Select Your City</option>
+          <option value="Hyderabad">Hyderabad</option>
+          <option value="Karimnagar">Karimnagar</option>
+          <option value="Warangal">Warangal</option>
+        </select>
+      </div>
 
-<form action="login.html">
-
-<i>Name</i><br>
-<input type="text" name="name" required><br><br>
-
-<i>Email</i><br>
-<input type="email" name="email" required><br><br>
-
-<i>Password</i><br>
-<input type="password" name="password" required><br><br>
-
-<i>Mobile Number</i><br>
-<input type="tel" name="mobile" required><br><br>
-
-<i>Address</i><br>
-<textarea rows="4" cols="30"></textarea><br><br>
-
-<i>Gender</i><br>
-<input type="radio" name="gender"> <i>Male</i>
-<input type="radio" name="gender"> <i>Female</i>
-<input type="radio" name="gender"> <i>Other</i>
-<br><br>
-
- <p>
-            <input type="checkbox" id="gdiploma" value="10th"/>
-            <label for="gdiploma">10th</label>
-            <input type="checkbox" id="ginter" value="inter"  />
-            <label for="ginter">Inter</label>
-            <input type="checkbox" id="gdiploma" value="diploma" />
-            <label for="gdiploma">Diploma</label>
-            <input type="checkbox" id="gbtech" value="btech" />Btech
-            <label for="gbtech"></label>
-
-        </p>
-
-<i>Profile Picture</i><br>
-<input type="file" style="width: 200px;"><br><br>
-
-<i>City</i><br>
-<select>
-<option value="">Select your city</option>
-<option value="Hyderabad">Hyderabad</option>
-<option value="Chennai">Chennai</option>
-<option value="Bangalore">Bangalore</option>
-<option value="Mumbai">Mumbai</option>
-</select>
-<br><br>
-
-
-
-<br><br>
-
-<input type="submit" value="Register">
-
-</form>
-
-
-</body>
+      <div class="form-field2">
+        <textarea
+          required
+          placeholder="Enter your address"
+          name=""
+          id=""
+        ></textarea>
+      </div>
+      <div class="form-field">
+        <button>Register</button>
+      </div>
+    </form>
+  </body>
 </html>

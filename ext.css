@@ -1,0 +1,8 @@
+body{
+    background-color:purple ;
+    background-image: url("doromi\ -1.png"),url("doromi\ -1.png");
+    background-repeat: no-repeat;
+    background-position: left,right;
+    background-attachment: fixed;
+    background-size: 20%,20%;
+}
