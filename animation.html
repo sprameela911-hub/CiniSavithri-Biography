@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<style>
+.container{
+background-color:aqua;
+width: 25%;
+height: 300px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 1.3rem;
+font-family:sans-serif
+}
+p{
+background-color:rgb(255, 0, 170);
+color: white;
+border-radius: 3px;
+border: none;
+padding: 10px;
+transition:transform 0.5s linear;
+}
+p:hover{
+/* transform: translate(30px,50px); x-axis,y-axis moving
+transform: scale(2.2); zooom
+transform: skew(45deg,50deg); */
+/* transform: rotate(-360deg); */
+}
+.ball{
+background-color:rgb(220, 20, 207);
+width: 80px;
+height: 80px;
+border-radius: 50%;
+animation: bonus 1.5s ease infinite;
+position: absolute;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+@keyframes bonus{
+0%{
+top: 0px;
+}
+50%{
+top: 180px;
+transform: translate(50px) rotate(180deg) scale(1.4);
+}
+100%{
+top: 0px;
+}
+}
+</style>
+</head>
+<body>
+<!-- <div class="container">
+<p>Hello</p>
+</div> -->
+<div class="ball">
+Prameela
+</div>
+</body>
+</html>

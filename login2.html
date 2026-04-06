@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>LOGIN</title>
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+integrity="sha512-
+2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnet
+w=="
+crossorigin="anonymous"
+referrerpolicy="no-referrer"
+/>
+<style>
+body {
+background-color: darkorange;
+}
+body a{
+text-decoration: none;
+color:blueviolet;
+}
+.parent {
+background-color:rgba(255, 255,255, 0.5);
+backdrop-filter: blur(20px);
+width:25%;
+text-align: center;
+border-radius:10px;
+font-family: sans-serif;
+margin:5% auto 5% auto;
+padding: 10px 10px 30px 10px;
+box-shadow:0px 1px 40px rgba(255, 255,255, 0.7);
+}
+.parent div {
+margin: 5% 0%;
+}
+.form-field input {
+padding: 10px;
+width: 80%;
+border-radius: 8px;
+}
+.form-checkbox {
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 80%;
+padding:0px 10px ;
+text-align: center;
+margin: auto !important;
+}
+.form-field button{
+background-color:rgb(106, 163, 203);
+color: white;
+width:85%;
+padding:15px 20px ;
+border-radius: 10px;
+}
+.form-links{
+width:85%;
+margin:10% auto !important;
+}
+.form-links a{
+border: 1px solid black;
+border-radius: 10px;
+width:50%;
+padding: 15px 8%;
+margin:0px 10px;
+color:brown;
+}
+</style>
+</head>
+<body>
+<form class="parent">
+<h2>Welcome Back</h2>
+<p>Signin to your Account</p>
+<div class="form-field">
+<input type="email" placeholder="Enter Your Mail" name="email" />
+</div>
+<div class="form-field">
+<input type="password" placeholder="Enter password" name="password" />
+</div>
+<div class="form-checkbox">
+<div>
+<input id="checkbox" type="checkbox" name="checkbox" />
+<label for="checkbox">Remember me</label>
+</div>
+<a href="">forget password?</a>
+</div>
+<div class="form-field">
+<button>Sign In</button>
+</div>
+<div class="form-field">or continue with</div>
+<div class="form-links">
+<a href=""><i class="fa-brands fa-google"></i>Google</a>
+<a href=""><i class="fa-brands fa-github"></i>Github</a>
+</div>
+<div class="form-field">Dont have an account? <a href="">Signup</a></div>
+</form>
+</body>
+</html>
